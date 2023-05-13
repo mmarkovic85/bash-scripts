@@ -1,22 +1,22 @@
 #!/bin/bash
 
 # get full path to commands
-_sudo=$(command -v sudo)
-_apt=$(command -v apt)
-_pacman=$(command -v pacman)
+readonly fp_sudo=$(command -v sudo)
+readonly fp_apt=$(command -v apt)
+readonly fp_pacman=$(command -v pacman)
 
 # sudo + apt
-if [ -n "$_sudo" -a -n "$_apt" ]
+if [ -n "$fp_sudo" -a -n "$fp_apt" ]
 then
-    $_sudo $_apt update
+    $fp_sudo $fp_apt update
     
-    $_sudo $_apt upgrade
+    $fp_sudo $fp_apt upgrade
     
-    $_sudo $_apt dist-upgrade
+    $fp_sudo $fp_apt dist-upgrade
 fi
 
 # sudo + pacman
-if [ -n "$_sudo" -a -n "$_pacman" ]
+if [ -n "$fp_sudo" -a -n "$fp_pacman" ]
 then
-    $_sudo $_pacman -Syu
+    $fp_sudo $fp_pacman -Syu
 fi
