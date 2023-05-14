@@ -1,4 +1,4 @@
-# Bash Scripts 
+# Bash Scripts v0.1.0
 
 Usefull scripts for use in bash shell/terminal.
 
