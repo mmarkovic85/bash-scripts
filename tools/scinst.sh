@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# INstall SCript
+# SCript INSTall - install script from lib
 
 # get full path to commands
 readonly fp_echo=$(command -v echo)
