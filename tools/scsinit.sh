@@ -2,11 +2,13 @@
 
 # SCriptS INITialize
 
-# get full path to commands
+# FULL PATH COMMANDS
 readonly fp_echo=$(command -v echo)
 readonly fp_exit=$(command -v exit)
 readonly fp_sudo=$(command -v sudo)
 readonly fp_chmod=$(command -v chmod)
+
+# MAIN
 
 # resolve directory variable
 if [ ! -d "$1" ]
