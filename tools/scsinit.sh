@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Make Files eXecutable
+# SCriptS INITialize
 
 # get full path to commands
 readonly fp_echo=$(command -v echo)
